@@ -22,7 +22,7 @@ class Animation(WindowConfig):
 
 
         # Für Erweiterung auf 3D siehe Notion 
-        self.num_particles = 5000
+        self.num_particles = 50000
         center_x = np.random.uniform(-1, 1, self.num_particles).astype('f4') # Position der Partikel
         center_y = np.random.uniform(-1, 1, self.num_particles).astype('f4') # Position der Partikel
         #center_z = np.random.uniform(-1, 1, self.num_particles).astype('f4') # Position der Partikel später 3D
@@ -35,7 +35,7 @@ class Animation(WindowConfig):
         acceleration_y = np.random.uniform(-0.001, 0.001, self.num_particles).astype('f4') # Beschleunigung in y-Richtung
         #acceleration_z = np.random.uniform(-0.001, 0.001, self.num_particles).astype('f4') # Beschleunigung in z-Richtung später 3D
 
-        point_size = np.random.uniform(5, 7, self.num_particles).astype('f4') # Größe der Partikel
+        point_size = np.random.uniform(0.1, 1, self.num_particles).astype('f4') # Größe der Partikel
 
         color_r = np.full(self.num_particles, 25/255.0).astype('f4') # Farbe der Partikel (Rot)
         color_g = np.full(self.num_particles, 146/255.0).astype('f4') # Farbe der Partikel (Grün)
