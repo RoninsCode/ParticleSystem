@@ -1,6 +1,6 @@
 // Vertex shader - particle animation 
 
-#version 330 core
+#version 430 core
 
 layout(location = 0) in float in_center_x;
 layout(location = 1) in float in_center_y;
